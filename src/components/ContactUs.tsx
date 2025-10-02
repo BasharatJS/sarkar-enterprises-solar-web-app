@@ -393,6 +393,7 @@ Looking forward to your response!`
                     rows={4}
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all duration-300 resize-none text-gray-900 dark:text-white"
                     placeholder="Tell us about your solar energy requirements..."
+                    spellCheck="false"
                   />
                 </div>
 

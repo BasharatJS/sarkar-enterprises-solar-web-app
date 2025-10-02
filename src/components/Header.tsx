@@ -103,21 +103,21 @@ const Header: React.FC = () => {
             transition={{ duration: 0.3 }}
             className="flex items-center space-x-3"
           >
-            <div className="relative w-12 h-12 overflow-hidden rounded-full bg-gradient-to-br from-yellow-400 to-green-600 p-1">
+            <div className="relative w-16 h-16 overflow-hidden rounded-full bg-gradient-to-br from-yellow-400 to-green-600 p-1">
               <Image
                 src="/logo-sarkar-enterprise.png"
                 alt="Sarkar Enterprises"
-                width={48}
-                height={48}
+                width={64}
+                height={64}
                 className="w-full h-full object-contain rounded-full bg-white"
                 priority
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold bg-gradient-to-r from-green-600 to-yellow-500 bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 to-yellow-500 bg-clip-text text-transparent">
                 Sarkar Enterprises
               </h1>
-              <p className="text-xs text-gray-600 dark:text-gray-400">Solar Energy Solutions</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Solar Energy Solutions</p>
             </div>
           </motion.div>
 
@@ -138,7 +138,7 @@ const Header: React.FC = () => {
                   duration: 0.5,
                   ease: "easeOut"
                 }}
-                className="relative text-gray-700 dark:text-gray-300 font-medium transition-colors duration-300 hover:text-green-600 dark:hover:text-yellow-400 group px-4 py-2"
+                className="relative text-black dark:text-gray-300 font-bold transition-colors duration-300 hover:text-green-600 dark:hover:text-yellow-400 group px-4 py-2"
               >
                 {/* Animated Border - Always visible */}
                 <span className="absolute inset-0 rounded-lg overflow-hidden">

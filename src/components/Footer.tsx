@@ -56,9 +56,21 @@ const Footer: React.FC = () => {
       title: 'Quick Links',
       icon: ShieldCheckIcon,
       links: [
-        { name: 'Apply Online', href: 'https://pmsuryaghar.gov.in/#/', external: true },
-        { name: 'Apply for Subsidy', href: 'https://pmsuryaghar.gov.in/#/', external: true },
-        { name: 'Solar Calculator', href: 'https://www.orbenergy.com/solar-calculator/', external: true },
+        {
+          name: 'Apply Online',
+          href: 'https://pmsuryaghar.gov.in/#/',
+          external: true,
+        },
+        {
+          name: 'Apply for Subsidy',
+          href: 'https://pmsuryaghar.gov.in/#/',
+          external: true,
+        },
+        {
+          name: 'Solar Calculator',
+          href: 'https://www.orbenergy.com/solar-calculator/',
+          external: true,
+        },
         { name: 'Call Now', href: 'tel:+918638360212', external: false },
       ],
     },
@@ -66,8 +78,8 @@ const Footer: React.FC = () => {
 
   const quickStats = [
     { number: '100+', label: 'Happy Customers', icon: HeartIcon },
-    { number: '50+', label: 'MW Installed', icon: BoltIcon },
-    { number: '10+', label: 'Cities Covered', icon: GlobeAltIcon },
+    { number: '1+', label: 'MW Installed', icon: BoltIcon },
+    { number: '5+', label: 'Cities Covered', icon: GlobeAltIcon },
     { number: '25', label: 'Years Warranty', icon: ShieldCheckIcon },
   ]
 
@@ -329,7 +341,9 @@ const Footer: React.FC = () => {
                     <motion.li key={link.name}>
                       <motion.a
                         href={link.href}
-                        {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                        {...(link.external
+                          ? { target: '_blank', rel: 'noopener noreferrer' }
+                          : {})}
                         variants={linkVariants}
                         whileHover="hover"
                         className="text-gray-300 hover:text-green-400 transition-all duration-300 text-sm block"
@@ -355,7 +369,8 @@ const Footer: React.FC = () => {
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-sm text-center md:text-left">
                 <p>
-                  © {new Date().getFullYear()} Sarkar Enterprises. All rights reserved. |{' '}
+                  © {new Date().getFullYear()} Sarkar Enterprises. All rights
+                  reserved. |{' '}
                   <span className="text-green-400">
                     Empanelled vendor of PM SURYA GHAR MUFT BIJLI YOJNA
                   </span>

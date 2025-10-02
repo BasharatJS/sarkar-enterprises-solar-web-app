@@ -158,14 +158,14 @@ const WhyChooseUs: React.FC = () => {
     },
     {
       icon: GlobeAltIcon,
-      number: useCounter(10),
+      number: useCounter(5),
       suffix: '+',
       label: 'Cities Covered',
       description: 'Nationwide service network',
     },
     {
       icon: LightBulbIcon,
-      number: useCounter(50),
+      number: useCounter(1),
       suffix: 'MW+',
       label: 'Solar Installed',
       description: 'Clean energy generated',
@@ -251,7 +251,7 @@ const WhyChooseUs: React.FC = () => {
     return () => clearInterval(interval)
   }, [keyFeatures.length])
 
-  // Move right content to align with active card
+  // Move right content to align with active card (only on desktop)
   useEffect(() => {
     const updatePosition = () => {
       if (
@@ -263,7 +263,10 @@ const WhyChooseUs: React.FC = () => {
         const rightContent = rightContentRef.current
         const container = ref.current
 
-        if (activeCard) {
+        // Check if screen is desktop (lg breakpoint = 1024px)
+        const isDesktop = window.innerWidth >= 1024
+
+        if (activeCard && isDesktop) {
           // Get the parent container that holds both left and right sections
           const keyFeaturesGrid = (container as HTMLElement).querySelector(
             '#features-grid'
@@ -288,6 +291,9 @@ const WhyChooseUs: React.FC = () => {
             rightContent.style.transition =
               'transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)'
           }
+        } else {
+          // Reset transform on mobile
+          rightContent.style.transform = 'translateY(0px)'
         }
       }
     }

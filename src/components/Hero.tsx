@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
     {
       title: 'National Solar Mission',
       description:
-        'Get up to ₹78,000 subsidy on rooftop solar installation under Jawaharlal Nehru National Solar Mission.',
+        'Subsidy of ₹1,30,800/- available under PM Surya Ghar Muft Bijli Yojna scheme.',
       benefits: [
         '30% central subsidy',
         'Net metering facility',

@@ -27,13 +27,13 @@ const AboutUs: React.FC = () => {
       color: 'from-green-500 to-emerald-500',
     },
     {
-      number: '50+',
+      number: '1+',
       label: 'MW Installed',
       icon: BoltIcon,
       color: 'from-yellow-500 to-orange-500',
     },
     {
-      number: '10+',
+      number: '5+',
       label: 'Cities Covered',
       icon: GlobeAltIcon,
       color: 'from-blue-500 to-cyan-500',
@@ -86,7 +86,7 @@ const AboutUs: React.FC = () => {
     },
     {
       year: '2023',
-      title: 'First 100 MW',
+      title: 'First 100 KW',
       description:
         'Successfully completed our first major installations across multiple states.',
     },
@@ -100,7 +100,7 @@ const AboutUs: React.FC = () => {
       year: '2024',
       title: 'Expansion',
       description:
-        'Expanded operations to 25+ cities with dedicated service centers.',
+        'Expanded operations to 5+ cities with dedicated service centers.',
     },
     {
       year: '2025',

@@ -32,7 +32,7 @@ const Gallery: React.FC = () => {
       id: 2,
       src: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
       alt: 'Utility Scale Solar Power Plant',
-      title: '25MW Utility Scale Solar Plant',
+      title: '25KW Utility Scale Solar Plant',
       description:
         'Large-scale ground-mounted solar power plant - Dibrugarh, Assam',
       category: 'Utility Scale',
@@ -96,7 +96,7 @@ const Gallery: React.FC = () => {
       description:
         'Innovative floating solar installation on Brahmaputra river - Guwahati, Assam',
       category: 'Floating Solar',
-      projectDetails: '15MW Capacity • Water-cooled • Special Anchoring',
+      projectDetails: '15KW Capacity • Water-cooled • Special Anchoring',
     },
     {
       id: 9,
@@ -343,7 +343,7 @@ const Gallery: React.FC = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">
-                  10+
+                  5+
                 </div>
                 <div className="text-gray-600 dark:text-gray-400">
                   States Covered
@@ -351,7 +351,7 @@ const Gallery: React.FC = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
-                  50MW+
+                  1MW+
                 </div>
                 <div className="text-gray-600 dark:text-gray-400">
                   Solar Installed

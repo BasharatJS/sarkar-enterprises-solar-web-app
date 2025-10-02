@@ -117,7 +117,7 @@ const OurProducts: React.FC = () => {
     },
     {
       id: 6,
-      name: 'Solar Sprinkler System',
+      name: 'Sprinkler System',
       category: 'pumps',
       image: '/images/sprinkle-system.jpg',
       description: 'Automated sprinkler systems for efficient irrigation.',
