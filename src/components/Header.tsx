@@ -138,13 +138,21 @@ const Header: React.FC = () => {
                   duration: 0.5,
                   ease: "easeOut"
                 }}
-                className="relative text-gray-700 dark:text-gray-300 font-medium transition-colors duration-300 hover:text-green-600 dark:hover:text-yellow-400 group"
+                className="relative text-gray-700 dark:text-gray-300 font-medium transition-colors duration-300 hover:text-green-600 dark:hover:text-yellow-400 group px-4 py-2"
               >
-                {item.name}
-                <motion.div
-                  className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-green-600 to-yellow-500 group-hover:w-full transition-all duration-300"
-                  layoutId="navbar-indicator"
-                />
+                {/* Animated Border - Always visible */}
+                <span className="absolute inset-0 rounded-lg overflow-hidden">
+                  <span className="absolute inset-0 rounded-lg border-2 border-green-500/20 dark:border-yellow-500/20 group-hover:border-green-500/40 dark:group-hover:border-yellow-500/40 transition-all duration-300"></span>
+                  <span className="absolute inset-0 rounded-lg">
+                    <span className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-green-500 to-yellow-500 animate-border-spin"></span>
+                    <span className="absolute top-0 right-0 w-0.5 h-full bg-gradient-to-b from-yellow-500 to-green-500 animate-border-spin [animation-delay:0.15s]"></span>
+                    <span className="absolute bottom-0 right-0 w-full h-0.5 bg-gradient-to-l from-green-500 to-yellow-500 animate-border-spin [animation-delay:0.3s]"></span>
+                    <span className="absolute bottom-0 left-0 w-0.5 h-full bg-gradient-to-t from-yellow-500 to-green-500 animate-border-spin [animation-delay:0.45s]"></span>
+                  </span>
+                </span>
+
+                {/* Text */}
+                <span className="relative z-10">{item.name}</span>
               </motion.a>
             ))}
           </nav>

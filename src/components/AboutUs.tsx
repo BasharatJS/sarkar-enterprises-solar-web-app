@@ -102,6 +102,12 @@ const AboutUs: React.FC = () => {
       description:
         'Expanded operations to 25+ cities with dedicated service centers.',
     },
+    {
+      year: '2025',
+      title: 'Future Growth',
+      description:
+        'Continuing our mission to expand renewable energy solutions across India.',
+    },
   ]
 
   const containerVariants = {
