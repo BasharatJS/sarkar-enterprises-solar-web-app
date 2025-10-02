@@ -1,28 +1,29 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import PageLoader from '@/components/PageLoader';
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import './globals.css'
+import { ThemeProvider } from '@/contexts/ThemeContext'
+// import PageLoader from '@/components/PageLoader';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
-  title: "Sarkar Enterprises - Solar Energy Solutions",
-  description: "Leading solar energy solutions across India. Government certified solar panel installation with PM SURYA GHAR MUFT BIJLI YOJNA scheme.",
-};
+  title: 'Sarkar Enterprises - Solar Energy Solutions',
+  description:
+    'Leading solar energy solutions across India. Government certified solar panel installation with PM SURYA GHAR MUFT BIJLI YOJNA scheme.',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -30,10 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <PageLoader />
+          {/* <PageLoader /> */}
           {children}
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
