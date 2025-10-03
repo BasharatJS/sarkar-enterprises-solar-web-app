@@ -90,13 +90,13 @@ const Gallery: React.FC = () => {
     },
     {
       id: 8,
-      src: 'https://development.asia/sites/default/files/explainer/solar-farm.jpg',
-      alt: 'Floating Solar Power Plant',
-      title: '15MW Floating Solar Plant',
+      src: 'https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      alt: 'Commercial Solar Installation',
+      title: '50KW Commercial Solar System',
       description:
-        'Innovative floating solar installation on Brahmaputra river - Guwahati, Assam',
-      category: 'Floating Solar',
-      projectDetails: '15KW Capacity • Water-cooled • Special Anchoring',
+        'Comprehensive solar solution for shopping complex - Jorhat, Assam',
+      category: 'Commercial Solar',
+      projectDetails: '50KW Capacity • 150 Panels • ROI in 4 Years',
     },
     {
       id: 9,

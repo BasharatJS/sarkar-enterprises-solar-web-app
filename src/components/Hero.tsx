@@ -6,6 +6,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   CheckBadgeIcon,
+  ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/outline'
 
 const Hero: React.FC = () => {
@@ -250,11 +251,24 @@ const Hero: React.FC = () => {
                 Apply Online
               </motion.a>
               <motion.a
-                href="tel:+918638360212"
+                href="https://wa.me/918638360212"
+                target="_blank"
+                rel="noopener noreferrer"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
                 transition={{ duration: 0.3, delay: 0.1 }}
+                className="px-8 py-4 bg-green-500 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl hover:bg-green-600 transition-all duration-300 text-center flex items-center justify-center gap-2"
+              >
+                <ChatBubbleLeftRightIcon className="w-5 h-5" />
+                WhatsApp
+              </motion.a>
+              <motion.a
+                href="tel:+918638360212"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+                transition={{ duration: 0.3, delay: 0.2 }}
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 text-center"
               >
                 Call Now
